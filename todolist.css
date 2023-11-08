@@ -43,7 +43,8 @@
     margin-bottom: 25px;
 }
 input{
-    flex: 1;
+    /* flex: 1; */
+    width: 200px;
     border: none;
     outline: none;
     background: transparent;
@@ -108,8 +109,9 @@ ul li span:hover{
      .to-do{
          width: 300px;
      }
-     button{
-        padding: 5px;
-        font-size: 12px;
-     }
+    button{
+        padding: 10px 20px;
+        width: 50px;
+        font-size: 10px;
+    }
 }
