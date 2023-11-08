@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #718093;
+}
+.box{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    user-select: none;
+
+}
+.form{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    padding: 32px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.form-title{
+    font-size:20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.form-group{
+    height: 48px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-control{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: none;
+   top:0;
+   left: 0;
+   outline: none;
+   border: 1px solid #a1a1a1;
+   padding: 16px;
+   border-radius: 3px;
+   z-index: 1;
+}
+.form-label{
+   position: absolute;
+   top: 13px;
+   left:13px;
+   color: #a1a1a1;
+   padding: 0 6px;
+   font-size: 14px;
+   transition: 0.3s;
+   background-color: #fff;
+}
+.form p{
+  margin-top: 10px;
+  font-size: 15px;
+  text-decoration-color:#4285F4 ;
+}
+.form p a{
+  color:#4285F4 ;
+}
+.form-control:focus+ .form-label{
+    top:-8px;
+    z-index: 10;
+    color: #4285F4;
+    font-weight: 500;
+}
+.form-control:focus{
+    border: 2px solid #4285F4;
+}
+.form-control:not(:focus):valid+ label{
+    top:-10px;
+    z-index: 10;
+}
+.form h1{
+  text-align: center;
+  font-weight: 500;
+}
+.showlabel{
+    font-size: 14px;
+
+}
+.bottom-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-box a{
+    color: #4285F4;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+.form-button{
+    padding: 12px 32px;
+    background-color: #4285F4;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+.form-button a{
+  color: white;
+}
+.form-button:hover{
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
+.form,
+.image{
+  width: 50%;
+}
+
+.image{
+background-image: url('images/todolist.jpg');
+height: 400px;
+background-size:cover;
+background-position: center;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(114, 39, 213, 0.31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.overlay h3{
+  color:white;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+.overlay p{
+  color:white;
+  font-size: 13px;
+  font-weight: bold;
+   opacity: 0.6;
+}
+@media (max-width: 600px) {
+  .image {
+      display: none; 
+  }
+
+  .box {
+      flex-direction: column; 
+      max-width: 400px; 
+  }
+
+  .form {
+      width: 100%; 
+  }
+
+ 
+  .form-title {
+      font-size: 18px; 
+  }
+
+  .form-group {
+      margin-bottom: 15px; 
+  }
+
+  .form-control {
+      padding: 12px; 
+  }
+
+  .form-label {
+      font-size: 12px; 
+  }
+
+  .form p {
+      margin-top: 8px;
+      font-size: 13px; 
+  }
+
+  .form-button {
+      font-size: 16px; 
+  }
+}
