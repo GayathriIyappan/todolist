@@ -105,4 +105,11 @@ ul li span:hover{
      .container{
         background: linear-gradient(135deg, #153677,#4e085f); 
      }
+     .to-do{
+         width: 300px;
+     }
+     button{
+        padding: 5px;
+        font-size: 12px;
+     }
 }

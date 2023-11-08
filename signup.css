@@ -87,6 +87,6 @@ body {
 }
 @media (max-width: 600px){
   .container{
-    width: 450px;
+    width: 350px;
   }
 }

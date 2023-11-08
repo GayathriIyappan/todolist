@@ -165,7 +165,7 @@ background-position: center;
 
   .box {
       flex-direction: column; 
-      max-width: 400px; 
+      max-width: 300px; 
   }
 
   .form {
