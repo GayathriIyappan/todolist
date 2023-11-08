@@ -165,7 +165,7 @@ background-position: center;
 
   .box {
       flex-direction: column; 
-      max-width: 310px; 
+      max-width: 350px; 
   }
 
   .form {
@@ -195,10 +195,10 @@ background-position: center;
   }
 
   .form-button {
-      font-size: 16px; 
-      padding: 5px 10px;
+      font-size: 12px; 
+      padding: 5px;
   }
   .form-button a{
-    padding: 10px;
+    padding: 5px;
   }
 }
