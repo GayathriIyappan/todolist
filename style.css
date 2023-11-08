@@ -201,4 +201,7 @@ background-position: center;
   .form-button a{
     padding: 5px;
   }
+  .bottom-box a{
+     font-size: 12px;
+  }
 }
